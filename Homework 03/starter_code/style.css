@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+footer {
+    background: rgb(83, 83, 83);
+    padding: 10px 0 15px 0;
+    top: 50px;
+}
+
+footer, 
+footer nav ul li a, 
+.all-new, 
+.house-status-box,
+.jsir-div a, 
+.trulia-nav-topleft li a, 
+.trulia-nav-topright li a {
+    color: white;    
+}
+
+footer, 
+.house-status-box, 
+.trulia-copyright {
+    position: relative;
+}
+
+footer nav, 
+.house-finder {
+    font-size: 15px;
+}
+ 
+footer nav ul, 
+header, 
+header nav, 
+.house-finder, 
+.jsir-div,  
+.trulia-house-image, 
+.trulia-house-stats ul, 
+.trulia-nav-bottom ul li ul, 
+.trulia-nav-topleft, 
+.trulia-nav-topright {    
+    display: flex;
+}
+
+footer nav ul, 
+header, 
+header nav, 
+.house-finder, 
+.jsir-div, 
+.trulia-house-stats ul, 
+.trulia-nav-bottom ul li ul, 
+.trulia-nav-topleft, 
+.trulia-nav-topright {    
+    flex-direction: row;
+}
+
+footer nav ul, 
+.trulia-grid, 
+.trulia-nav-bottom ul li ul {
+    gap: 10px;
+}
+
+footer nav ul, 
+.trulia-nav-topleft, 
+.trulia-nav-topright {
+    list-style: none;
+}
+
+footer nav ul li a, 
+.jsir-div a, 
+.trulia-nav-bottom ul li ul li a, 
+.trulia-nav-topleft li a, 
+.trulia-nav-topright li a {
+    text-decoration: none;
+}
+
+header {
+    background: #20c063;
+}
+
+header, 
+.house-finder, 
+.trulia-house-stats ul {
+    align-items: center;
+}
+
+h4 {
+    margin-left: 30px;
+}
+
+.about-trulia, 
+.real-estate-title {
+    margin-left: 40px;
+}
+
+.about-trulia, 
+.trulia-house-address, 
+.trulia-house-stats ul {
+    font-size: 14px;
+}
+
+.all-new {
+    background: rgb(32, 192, 99, 0.75);
+    height: 16px;
+}
+
+.choice-i {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+    background-position: 0 -70px;
+}
+
+.choice-ii {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+    background-position: 0 -75px;
+}
+
+.choice-iii {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+    background-position: 0 -90px;
+}
+
+.choice-iv {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+    background-position: 0 -70px;
+}
+
+.choice-v {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+    background-position: 0 -90px;
+}
+
+.choice-vi {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+    background-position: 0 -70px;
+}
+
+.choice-vii {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+    background-position: 0 -253px;
+}
+
+.choice-viii {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);    
+    background-position: 0 -70px;
+}
+
+.choice-xi {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-9.jpg);
+}
+
+.choice-x {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);    
+    background-position: 0 -80px;
+}
+
+.choice-xi {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);    
+    background-position: 0 -80px;
+}
+
+.choice-xii {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+    background-position: 0 -70px;
+}
+
+.for-sale {
+    background-color: rgb(128, 128, 128, 0.75);
+    height: 32px;
+}
+
+.house-finder {
+    gap: 20px;
+}
+
+.house-status-box {
+    border-radius: 10px 0 10px 0;
+    left: 0;
+    padding: 3px;
+    top: 0;
+}
+
+.jsir-div {
+    right: 20px;
+}
+
+.jsir-div, 
+.trulia-j, 
+.trulia-nav-topright {
+    position: absolute;
+}
+
+.trulia-copyright {
+    top: 5px;
+}
+
+.trulia-copyright, 
+.trulia-house-beds img, 
+.trulia-house-baths img {
+    font-size: small;
+}
+
+.trulia-copyright, 
+.trulia-nav-bottom > ul > li:nth-child(2) {
+    text-align: center;
+}
+
+.trulia-grid {
+    background: #e8e9ea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.trulia-grid-item {
+    background: white;
+    border-radius: 10px;
+}
+
+.trulia-house-address {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.trulia-house-beds img, 
+.trulia-house-baths img {
+    height: 30%;
+    width: 30%;
+}
+
+.trulia-house-facts {
+    margin-top: -10px;
+}
+
+.trulia-house-facts, 
+.trulia-house-stats ul, 
+.trulia-nav-bottom ul {
+    list-style: none;
+}
+
+.trulia-house-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    height: 160px;
+    width: 100%;
+}
+
+.trulia-house-price {
+    margin-bottom: 5px;
+}
+
+.trulia-house-stats ul {
+    justify-content: left;
+    padding-left: 0;
+}
+
+.trulia-j {
+    right: 10px;
+}
+
+.trulia-logo {
+    height: 50px;
+}
+
+.trulia-nav-bottom ul li ul {
+    justify-content: center;
+}
+
+.trulia-nav-bottom > ul > li:nth-child(2) {
+    margin: 15px auto;
+}
+
+.trulia-nav-topleft {
+    margin-left: -20px;
+}
+
+.trulia-nav-topleft, 
+.trulia-nav-topright {
+    gap: 20px;
+}    
+
+.trulia-nav-topright {
+    right: 150px;   
+}
