@@ -10,14 +10,16 @@ function declareWinner() {
   document.body.classList.add('game-over');
 }
 
-ballEl.onclick = function() {
+function scorePoints() {
   let newScore = score + 10;
   if (newScore == 100) {
     scoreEl.innerHTML = "0" + newScore;
     declareWinner();
   }
-  else {  
+  else {
     score = newScore;
     scoreEl.innerHTML = "00" + score;
   }
-};
+}
+
+ballEl.onclick = function() {scorePoints()};

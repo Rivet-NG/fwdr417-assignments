@@ -12,38 +12,18 @@ function declareWinner() {
 
 let ballList = arenaEl.querySelectorAll('.js-ball');
 
-ballList[0].onclick = function() {
-  let counterOne = score + 10;
-  if (counterOne == 100) {
-    scoreEl.innerHTML = "0" + counterOne;
+function scorePoints() {
+  let newScore = score + 10;
+  if (newScore == 100) {
+    scoreEl.innerHTML = "0" + newScore;
     declareWinner();
   }
   else {
-    score = counterOne;
+    score = newScore;
     scoreEl.innerHTML = "00" + score;
   }
-};
+}
 
-ballList[1].onclick = function() {
-  let counterTwo = score + 10;
-  if (counterTwo == 100) {
-    scoreEl.innerHTML = "0" + counterTwo;
-    declareWinner();
-  }
-  else {
-    score = counterTwo;
-    scoreEl.innerHTML = "00" + score;
-  }
-};
-
-ballList[2].onclick = function() {
-  let counterThree = score + 10;
-  if (counterThree == 100) {
-    scoreEl.innerHTML = "0" + counterThree;
-    declareWinner();
-  }
-  else {
-    score = counterThree;
-    scoreEl.innerHTML = "00" + score;
-  }
-};
+ballList[0].onclick = function() {scorePoints()};
+ballList[1].onclick = function() {scorePoints()};
+ballList[2].onclick = function() {scorePoints()};
