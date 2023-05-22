@@ -16,26 +16,14 @@ let twentyPoints = Number(ballList[0].dataset.increment);
 let fivePoints = Number(ballList[1].dataset.increment);
 let tenPoints = Number(ballList[2].dataset.increment);
   
-ballList[0].onclick = function() {
-  let counterOne = score + twentyPoints;
-  if (counterOne >= 100) {
-    scoreEl.innerHTML = "0" + counterOne;
+function scorePointsBySize(pointsEarned) {
+  let newScore = score + pointsEarned;
+  if (newScore >= 100) {
+    scoreEl.innerHTML = "0" + newScore;
     declareWinner();
   }
   else {
-    score = counterOne;
-    scoreEl.innerHTML = "00" + score;
-  }
-};
-  
-ballList[1].onclick = function() {
-  let counterTwo = score + fivePoints;
-  if (counterTwo >= 100) {
-    scoreEl.innerHTML = "0" + counterTwo;
-    declareWinner();
-  }
-  else {
-    score = counterTwo;
+    score = newScore;
     if (score < 10) {
       scoreEl.innerHTML = "000" + score;
     }
@@ -43,16 +31,8 @@ ballList[1].onclick = function() {
       scoreEl.innerHTML = "00" + score;
     }
   }
-};
-  
-ballList[2].onclick = function() {
-  let counterThree = score + tenPoints;
-  if (counterThree >= 100) {
-    scoreEl.innerHTML = "0" + counterThree;
-    declareWinner();
-  }
-  else {
-    score = counterThree;
-    scoreEl.innerHTML = "00" + score;
-  }
-};
+}
+
+ballList[0].onclick = function() {scorePointsBySize(twentyPoints)};
+ballList[1].onclick = function() {scorePointsBySize(fivePoints)};
+ballList[2].onclick = function() {scorePointsBySize(tenPoints)};
