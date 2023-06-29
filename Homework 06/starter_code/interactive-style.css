@@ -1,0 +1,128 @@
+/* Featured and Expanded Item */
+
+.trulia-featured-grid-item {
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 535px;
+  min-height: 360px;
+}
+
+.trulia-featured-grid-item .trulia-article-icon {
+  height: 25px;
+}
+
+.trulia-featured-grid-item .trulia-house-address {
+  color: #373737;
+  flex: 3;
+  font-size: 20px;
+}
+
+.trulia-featured-grid-item .trulia-house-facts {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80.25px;
+  justify-content: space-between;
+  min-height: 160px;
+  padding: 0 10px;
+}
+
+.trulia-featured-grid-item .trulia-house-image {
+  height: 454.75px;  
+}
+
+.trulia-featured-grid-item .trulia-house-price {
+  flex: 1;
+  min-width: 300px;
+}
+
+.trulia-featured-grid-item .trulia-house-price h1 {
+  font-size: 30px;
+}
+
+.trulia-featured-grid-item .trulia-house-stats {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.trulia-grid-item {
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+@media screen and (min-width: 1601px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+  
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trulia-nav {
+    display: block;
+    height: auto;
+  }
+  
+  .trulia-nav ul li {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .trulia-nav-item,
+  .trulia-nav-item:visited {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 1rem;
+  }
+  
+  .trulia-nav-left, 
+  .trulia-nav-right {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .trulia-nav-left ul, 
+  .trulia-nav-right ul {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  .trulia-nav-left ul li,
+  .trulia-nav-right ul li {
+    display: block;
+  }
+  
+  .trulia-nav-logo {
+    height: 25px;
+    padding-left: 0;
+    width: 78px; /*Strangely enough, when the width of the logo is set to 81 or higher, it not only moves to the right, 
+    but increases by size (to a certain maximum, of course).*/ 
+  }
+  
+  .trulia-nav-mobilehide {
+    height: 0; 
+    overflow: hidden;
+    width: 0; /*The overflow and width properties seem kinda unnecessary here...*/
+  }
+  
+  .trulia-nav-toggle {
+    color: white;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+}
+  
+@media screen and (max-width: 767px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
